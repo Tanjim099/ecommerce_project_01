@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-main">
+            <div class="logo">
+                <h1><a href="index.html">LOGO</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="megamenuparent"><a href="#">Shop<i class="fa fa-caret-down"></i></a>
+                        <div class="megamenu">
+                            <div class="items">
+                                <h3>Man Fashion</h3>
+                                <ul>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                </ul>
+                            </div>
+                            <div class="items">
+                                <h3>Woman Fashion</h3>
+                                <ul>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                </ul>
+                            </div>
+                            <div class="items">
+                                <h3>Beauty Product</h3>
+                                <ul>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                </ul>
+                            </div>
+                            <div class="items">
+                                <img src="img1.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="megamenu_news_parent"><a href="#">News<i class="fa fa-caret-down"></i></a>
+                        <div class=" megamenu_news">
+                            <div class="items">
+                                <img src="img2.png" alt="">
+                                <h3>Product 1</h3>
+                            </div>
+                            <div class="items">
+                                <img src="img2.png" alt="">
+                                <h3>Product 1</h3>
+                            </div>
+                            <div class="items">
+                                <img src="img2.png" alt="">
+                                <h3>Product 1</h3>
+                            </div>
+                            <div class="items">
+                                <img src="img2.png" alt="">
+                                <h3>Product 1</h3>
+                            </div>
+                            <div class="items">
+                                <img src="img2.png" alt="">
+                                <h3>Product 1</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="icon">
+                <i class="fa fa-search" id="search-btn"></i>
+                <i class='fa fa-user' id="userbtn"></i>
+                <i class="fa fa-heart"></i>
+                <i class='fa fa-shopping-cart' id="cart"><span id="Shop_cart">0</span></i>
+            </div>
+        </div>
+    </header>
+    <form action="" class="search-form">
+        <input type="search" class="search-box" placeholder="search here...">
+        <label for="search-box" class="fa fa-search"></label>
+  
+    </form>
+
+
+    <div id="shopingcart">
+        <div class="cartitem">
+            <img src="" alt="">
+            <!-- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0WjQreKDnzsitSGiP4fsuuBGFz-3gJJE1B779Ys_nHd52YTfkLealDlJqXiraFAcIbOA&usqp=CAU -->
+            <h3 id="itemname"></h3>
+            <p id="itmeprice" class="itemprice"></p>
+            <span id="itemremovebtn">&times;</span>
+        </div>
+        <div id="totalprice">
+            <p class="total">Total</p>
+            <p>0</p>
+        </div>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="Your email" class="box" id="login-email">
+        <input type="password" placeholder="Your password" class="box" id="login_pass">
+        <p id="checkpass"></p>
+        <input type="submit" value="Login now" class="btn" id="login_btn">
+        <div><a href="forget">Forget</a>
+            <a href="register.html">Register</a></div>
+      </form>
+
+      <section class="popup">
+        <form id="form">
+          <span id="removebtn">&times;</span>
+          <h2>Contact Form</h2>
+          <div>
+            <label>Name</label>
+            <input type="text" placeholder="name" />
+          </div>
+          <div>
+            <label>Email</label>
+            <input type="email" placeholder="email" />
+          </div>
+          <div>
+            <label>Phone</label>
+            <input type="number" placeholder="phone" />
+          </div>
+        </form>
+      </section>
+      <section>
+        <div class="product_page">
+            <div class="product_page_left">
+                <div class="small_image_section">
+                    <img onclick="imageChange(this)" src="https://www.jiomart.com/images/product/420x420/491959391/lg-260l-2-star-frost-free-double-door-refrigerator-with-smart-inverter-compressor-blue-charm-gl-s292rbcy-digital-o491959391-p590930377-0-202112021503.jpeg" alt="">
+                    <img onclick="imageChange(this)" src="https://www.jiomart.com/images/product/420x420/491959391/lg-260l-2-star-frost-free-double-door-refrigerator-with-smart-inverter-compressor-blue-charm-gl-s292rbcy-digital-o491959391-p590930377-1-202112021503.jpeg" alt="">
+                    <img onclick="imageChange(this)" src="https://www.jiomart.com/images/product/420x420/491959391/lg-260l-2-star-frost-free-double-door-refrigerator-with-smart-inverter-compressor-blue-charm-gl-s292rbcy-digital-o491959391-p590930377-3-202210281108.jpeg" alt="">
+                    <img onclick="imageChange(this)" src="https://www.jiomart.com/images/product/420x420/491959391/lg-260l-2-star-frost-free-double-door-refrigerator-with-smart-inverter-compressor-blue-charm-gl-s292rbcy-digital-o491959391-p590930377-5-202210281108.jpeg" alt="">
+                </div>
+                <div class="big_image_section">
+                    <img id="chengerimage" src="https://www.jiomart.com/images/product/420x420/491959391/lg-260l-2-star-frost-free-double-door-refrigerator-with-smart-inverter-compressor-blue-charm-gl-s292rbcy-digital-o491959391-p590930377-8-202210281108.jpeg" alt="">
+                    <button class="add-to-cart product_addtocartbtn" id="product_addtocartbtn">Add To Cart</button>
+                    <button class="product_addtocartbtn" id="buy_productbtn">Buy Now</button>
+                </div>
+            </div>
+            <div class="product_page_right">
+                <h2 id="product_brand">LG</h2>
+                <h2 id="product_name">Voltas Beko 195 L 2 Star Single Door Refrigerator, Belus Wine RDC215D/BWEXXXXG</h2>
+                <p id="product_price">₹13,490.00</p>
+                <p id="product_warranty">Warranty : 2 Years</p>
+                <h1 id="product_offers">Offer</h1>
+                <h3 id="product_additional_offer">ADDITIONAL OFFERS</h3>
+            </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="related_product">
+            <div class="product_item_div">
+                <a href="product.html"><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1682194561_Voltas.jpg" alt=""></a>
+            </div>
+            <div class="product_item_div">
+                <a href="#"><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1682231428_Grab_or_Gone___TWS.jpg" alt=""></a>
+            </div>
+            <div class="product_item_div">
+                <a href="#"><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1682194631_Realme_C35.jpg" alt=""></a>
+            </div>
+            <div class="product_item_div">
+                <a href="#"><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1682032047_T_shirts.jpg" alt=""></a>
+            </div>
+            <div class="product_item_div">
+                <a href="#"><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1682032106_Laundry_Essentials.jpg" alt=""></a>
+            </div>
+            <div class="product_item_div">
+                <a href="#"><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1682032133_Sports_Shoes.jpg" alt=""></a>
+            </div>
+        </div>
+      </section>
+
+      <script>
+        function imageChange(e){
+            var changerImage = document.getElementById("chengerimage");
+            changerImage.src = e.src;
+        }
+
+        const buyBtn = document.getElementById("buy_productbtn");
+        buyBtn.addEventListener("click", ()=>{
+            alert("Thanks for buy your order has been accepted")
+        })
+
+        const items = document.querySelectorAll(".product_item_div");
+      </script>
+      <script src="script.js"></script>
+</body>
+</html>
